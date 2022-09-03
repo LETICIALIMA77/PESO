@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      NADADOR
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+  <ion-item>
+    <ion-label>
+      informe sua idade
+      <ion-input type="number"[(ngModel)]="idade"></ion-input>
+    </ion-label>
+
+  <ion-button size="medium"color="sucess"(click)="verificar(idade)">verificar</ion-button>
+  <ion-input readonly="true" value={{res}></ion-input>
+</ion-item>
+  </div>
+
+</ion-content>
